@@ -64,8 +64,8 @@ def add_server_time(server_url="https://gamepanel2.gtxgaming.co.uk/server/6151e0
                 page.goto(login_url, wait_until="networkidle", timeout=60000)
 
                 # 登录表单元素选择器
-                email_selector = 'input[name="Username or Email"]'
-                password_selector = 'input[name="Password"]'
+                email_selector = 'input[name="username"]'
+                password_selector = 'input[name="password"]'
                 login_button_selector = 'button[type="submit"]'
 
                 print("正在等待登录元素加载...")
